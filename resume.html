@@ -8,216 +8,36 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
+	<link href='style.css' rel='stylesheet' type='text/css' />
 	<script src="Chart.min.js"></script>
-	<style>
-	#personal div {
-		position: fixed;
-		top: 30%;
-		padding: 20px;
-	}
-	#personal p {
-		width: 90%;
-	}
-	.container-fluid>.row {
-		background-color: #fafafa;
-	}
-	#personal .name {
-		color: #69707a;
-	}
-	#personal, #work-and-edu {
-		overflow: auto;
-	}
-	#work-and-edu {
-		padding-left: 10px;
-		overflow: hidden;
-		padding-right: 0;
-	}
-	#work-and-edu > div {
-		box-shadow: 0 -2px 10px rgba(0,0,0,.4);
-		height: 100%;
-		background-color: white;
-		padding-left: 0;
-	}
-	.container-fluid {
-		max-width: 1160px;
-	}
-	.tag-content {
-		line-height: 30px;
-		margin-left: -6px;
-		text-align: center;
-		font-size: 15px;
-		font-weight: 600;
-		color: white;
-	}
-	.tag-carret {
-		width: 0;
-		height: 0;
-		margin-left: -6px;
-		border-left: 6px solid transparent;
-	}
-	#portfolios .projects {
-		padding-left: 15px;
-	}
-
-	#edu .tag-carret {
-		border-top: 4px solid rgb(140, 211, 98);
-	}
-	#edu .tag-content {
-		background-color: rgb(130, 201, 88);
-	}
-
-	#work .tag-content {
-		background-color: rgb(247, 201, 83);
-	}
-
-	#work .tag-carret {
-		border-top: 4px solid rgb(237, 191, 73);
-	}
-
-	#self-sale .tag-carret {
-		border-top: 4px solid rgb(213, 30, 34);
-	}
-
-	#self-sale .tag-content {
-		background-color: rgb(203, 20, 24);
-	}
-
-	#skill .tag-content {
-		background-color: rgb(131, 126, 182);
-	}
-
-	#skill .tag-carret {
-		border-top: 4px solid rgb(121, 116, 172);;
-	}
-
-	#portfolios .tag-content {
-		background-color: rgb(78, 137, 218);
-	}
-
-	#portfolios .tag-carret {
-		border-top: 4px solid rgb(68, 127, 208);
-	}
-	#portfolios .projects a {
-		color: rgb(78, 137, 218);
-		font-size: 14px;
-		font-weight: 600;
-	}
-	#portfolios {
-		color: rgb(78, 137, 218);
-	}
-	#portfolios p {
-		color: black;
-	}
-
-	.tag {
-		width: 60%;
-	}
-	.details {
-		padding-left: 15px;
-    margin-bottom: 10px;
-	}
-	#work .details {
-		border-bottom: 1px dashed rgb(247, 201, 83);
-	}
-	#work .project-name {
-		color: rgb(247, 201, 83);
-	}
-
-	#personal,	#edu {
-		padding-top: 20px;
-	}
-	#personal .name, #personal .value {
-		display: inline-block;
-		vertical-align: top;
-	}
-	#personal .name {
-		width: 30%;
-	}
-	#personal .value{
-		width: 70%;
-	}
-	.org-name {
-		font-size: 18px;
-		font-weight: 600;
-	}
-	.grey-text {
-		color: #89959B;
-	}
-	.details .projects {
-		list-style-type: square;
-	}
-	.org-period {
-		font-size: 12px;
-		color: #89959B;
-	}
-	#person-name {
-		border-bottom: 1px dotted rgb(58, 185, 129);
-	}
-	#person-name i {
-		color: rgb(58, 185, 129);
-	}
-	#person-phone {
-		border-bottom: 1px dotted rgb(131, 126, 182);
-	}
-	#person-phone i {
-		color: rgb(131, 126, 182);
-	}
-	#person-email i {
-		color: rgb(218, 87, 87);
-	}
-	#person-email {
-		border-bottom: 1px dotted rgb(218, 87, 87);
-	}
-	#person-skype i {
-		color: rgb(140, 211, 98);
-	}
-	#person-skype {
-		border-bottom: 1px dotted rgb(140, 211, 98);
-	}
-	#person-visa-type {
-		border-bottom: 1px dotted rgb(78, 137, 218);
-	}
-	#person-visa-type i {
-		color: rgb(78, 137, 218);
-	}
-	#person-visa-expiry {
-		border-bottom: 1px dotted rgb(247, 201, 83);
-	}
-	#person-visa-expiry i {
-		color: rgb(247, 201, 83);
-	}
-	#person-address {
-		border-bottom: 1px dotted rgb(213, 30, 34);
-	}
-	#person-address i {
-		color: rgb(213, 30, 34);
-	}
-	</style>
 </head>
 <body>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-4" id="personal">
+			<div class="col-md-4 col-xs-12" id="personal">
 				<div>
-				<p id="person-name">
+				<p id="person-name" class="detail-item">
 <span class='name'><i class="fa fa-circle-o" aria-hidden="true"></i> Name:</span><span class="value grey-text"> Connor Lin</span>
 				</p>
-				<p id="person-phone">
+				<p id="person-phone" class="detail-item">
 					<span class='name'><i class="fa fa-phone" aria-hidden="true"></i> Phone:</span><span class="value grey-text"> 0431 459 634</span>
 				</p>
-				<p id="person-email">
+				<p id="person-email" class="detail-item">
 					<span class='name'><i class="fa fa-envelope-o" aria-hidden="true"></i> Email:</span><span class="value grey-text"> linbaiye@gmail.com</span>
 				</p>
-				<p id="person-skype">
+				<p id="person-skype" class="detail-item">
 					<span class='name'><i class="fa fa-skype" aria-hidden="true"></i> Skype:</span><span class="value grey-text"> luffyking8</span>
 				</p>
-				<p id="person-visa-type">
+				<p id="person-visa-type" class="detail-item">
 					<span class='name'><i class="fa fa-circle-o" aria-hidden="true"></i> Visa Type:</span><span class="value grey-text"> 462 (Working holiday)</span>
 				</p>
-				<p id="person-visa-expiry">
+				<p id="person-visa-expiry" class="detail-item">
 					<span class='name'><i class="fa fa-circle-o" aria-hidden="true"></i> Visa Expiry:</span><span class="value grey-text"> Jun/26/2017</span>
 				</p>
-				<p id="person-address">
+				<p id="pdf-resume" class="detail-item">
+					<span class='name'><i class="fa fa-download" aria-hidden="true"></i> PDF</span><a class="value" href="./connor_lin_resume.pdf">Click to download</a>
+				</p>
+				<p id="person-address" class="detail-item">
 					<span class='name'><i class="fa fa-home" aria-hidden="true"></i> Address:</span><span class="value grey-text"> Apartment 6, 122 Bland Street, Ashfield, NSW</span>
 				</p>
 				</div>
