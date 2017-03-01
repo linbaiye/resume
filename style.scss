@@ -10,7 +10,24 @@
 #personal,	#edu {
   padding-top: 20px;
 }
+.tag-content {
+  line-height: 30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+}
+.tag-carret {
+  width: 0;
+  height: 0;
+}
 @media (min-width : 768px) {
+  .tag-content, .tag-carret {
+    margin-left: -6px;
+  }
+  .tag-carret {
+    border-left: 6px solid transparent;
+  }
   #personal div {
     position: fixed;
     top: 30%;
@@ -127,20 +144,7 @@
 .container-fluid {
   max-width: 1160px;
 }
-.tag-content {
-  line-height: 30px;
-  margin-left: -6px;
-  text-align: center;
-  font-size: 15px;
-  font-weight: 600;
-  color: white;
-}
-.tag-carret {
-  width: 0;
-  height: 0;
-  margin-left: -6px;
-  border-left: 6px solid transparent;
-}
+
 #portfolios .projects {
   padding-left: 15px;
 }
