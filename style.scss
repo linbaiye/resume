@@ -93,8 +93,14 @@
   #pdf-resume i {
     color: rgb(187, 130, 78) !important;
   }
+  #web-link {
+    display: none;
+  }
 }
 @media (max-width : 767px) {
+  #work {
+    margin-top: 70px;
+  }
   #personal div {
     padding-top: 10px;
     padding-bottom: 10px;
