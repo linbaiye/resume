@@ -10,6 +10,36 @@
 #personal,	#edu {
   padding-top: 20px;
 }
+.skill-category li, .projects li {
+  margin-bottom: 10px;
+}
+.projects p {
+  margin-bottom: 0;
+}
+#skill-categories {
+  list-style-type: square;
+  padding-left: 15px;
+  .skill-category ul {
+    padding-left: 15px;
+  }
+  .skill-category {
+    margin-bottom: 10px;
+  }
+  .skill-category>p:first-child {
+    font-weight: 600;
+    color: #837eb6 !important;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  .skill-note {
+    color: black;
+  }
+  .skill-title {
+    color: #837eb6 !important;
+  }
+}
+
 .tag-content {
   line-height: 30px;
   text-align: center;
@@ -221,10 +251,10 @@
   vertical-align: top;
 }
 #personal .name {
-  width: 30%;
+  width: 40%;
 }
 #personal .value{
-  width: 70%;
+  width: 60%;
 }
 .org-name {
   font-size: 18px;

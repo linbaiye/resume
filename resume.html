@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css' />
 	<link href='style.css' rel='stylesheet' type='text/css' />
-	<script src="Chart.min.js"></script>
 </head>
 <body>
 	<div class="container-fluid">
@@ -37,12 +36,6 @@
 				<p id="pdf-resume" class="detail-item">
 					<span class='name'><i class="fa fa-download" aria-hidden="true"></i> PDF:</span><a class="value" href="./connor_lin_resume.pdf">Click to download</a>
 				</p>
-				<p id="person-address" class="detail-item">
-					<span class='name'><i class="fa fa-home" aria-hidden="true"></i> Address:</span><span class="value grey-text"> Apartment 6, 122 Bland Street, Ashfield, NSW</span>
-				</p>
-				<p id="web-link" class="detail-item">
-					<span class='name'><i class="fa fa-circle-o" aria-hidden="true"></i> Web Resume:</span><span class="value grey-text"> Please visit http://www.nalby.org if possible.</span>
-				</p>
 				</div>
 			</div>
 			<div class="col-md-8" id="work-and-edu">
@@ -63,33 +56,6 @@
 							</p>
 						</div>
 					</div>
-					<div id="portfolios">
-						<div class="tag">
-							<div class="tag-content">
-								Portfolios
-							</div>
-							<div class="tag-carret">
-							</div>
-						</div>
-						<div class="details">
-							<ul class="projects">
-								<li>
-									<span class="project"><a href="http://www.austcorp.com.au/" target="_blank">Austcorp</a></span>
-									<p>
-										This is just a small website I built.
-									</p>
-								</li>
-								<li>
-									<span class="project"><a href="http://zomato.nalby.org/" target="_blank">Zomato</a></span>
-									<p>
-										As projects I built are not accessible over Internet, I am making this project to demonstrate my capability.
-										While Java, SpringMVC, Hibernate, Elasticsearch are utilized to do the backend job, the front end is done with
-										Angular, Gulp, Sass, Bootstrap. It is responsive and a user 'Nancy' can be loged in with password 'password'.<strong> However, some features do not function for it is still in development.</strong>
-									</p>
-								</li>
-							</ul>
-						</div>
-					</div>
 					<div id="skill">
 						<div class="tag">
 							<div class="tag-content">
@@ -99,7 +65,135 @@
 							</div>
 						</div>
 						<div class="details">
-							<canvas id="myChart" width="300" height="350"></canvas>
+							<!--canvas id="myChart" width="300" height="350"></canvas-->
+							<ul id="skill-categories">
+								<li class="skill-category">
+									<p>
+										Advanced
+									</p>
+									<ul>
+										<li>
+											<p class="skill-title">
+												Java
+											</p>
+											<p class="skill-note">
+												Familiar with not only the language itself, but frameworks like Spring, SpringMVC, Mybatis, Hibernate, JSP, Servlet.
+												In short, able to utilize Java and various frameworks to build (http/networking)applications independently and reliably.
+											</p>
+										</li>
+										<li>
+											<p class="skill-title">
+												C
+											</p>
+											<p class="skill-note">
+												Have sufficient knowledge and experience of C to build low-level applications/systems under Linux(Centos, Openwrt, Ubuntu).
+											</p>
+										</li>
+										<li>
+											<p class="skill-title">
+												TCP/IP
+											</p>
+											<p class="skill-note">
+												Have solid knowledge and experience about TCP/IP network stack, able to do socket programming reliably even with new languages.
+											</p>
+										</li>
+										<li>
+											<p class="skill-title">
+												Linux
+											</p>
+											<p class="skill-note">
+												I having been working under Linux since 2012. Have solid knowledge about FS/MM/Network/Processes and sufficient programming experience of processes, threads, socket.
+											</p>
+										</li>
+										<li>
+											<p class="skill-title">
+												Ability to get things done and employee new languages/frameworks.
+											</p>
+											<p class="skill-note">
+												As I have enough experience about software development, I am able to deliver the result reliably.
+											</p>
+										</li>
+									</ul>
+								</li>
+								<li class="skill-category">
+									<p>
+										Intermediate
+									</p>
+									<ul>
+											<li>
+											<p class="skill-title">
+												Javascript/HTML/CSS
+											</p>
+											<p class="skill-note">
+												Able to make responsive layout following designs and use JQuery/Angular1/Javascript to interact with users, communicate with servers, but might need extra time to test when cross-platform is necessary since most of the applications I worked with just needed to support Chrome.
+											</p>
+											</li>
+											</li>
+											<li>
+											<p class="skill-title">
+												Shell
+											<p/>
+											<p class="skill-note">
+												Good understanding of Linux enables me to write shell scripts to automate tasks.
+											</p>
+											</li>
+											<li>
+											<p class="skill-title">
+												Python
+											<p/>
+											<p class="skill-note">
+												I will choose Python(Flask) to do the job when shell scripts are not good enough, or when a small web application is needed.
+											</p>
+											</li>
+											<li>
+											<p class="skill-title">
+												SQL
+											</p>
+											<p class="skill-note">
+												Have enough knowledge and experience to design normalizated tables, familiar with common operations.
+											</p>
+											</li>
+											<li>
+											<p class="skill-title">
+												Redis
+											</p>
+											<p class="skill-note">
+												Have experience using it.
+											</p>
+											</li>
+											<li>
+											<p class="skill-title">
+												DNS/HTTP/TLS(HTTPS)
+											</p>
+											<p class="skill-note">
+												Understand how these protocols work, have enough experience to troubleshoot networking issues and design secure applications.
+											</p>
+											</li>
+									</ul>
+								</li>
+								<li class="skill-category">
+									<p>
+										Basic
+									</p>
+									<ul>
+										<li>
+											Lua
+										</li>
+										<li>
+											Elasticsearch
+										</li>
+										<li>
+											Docker
+										</li>
+										<li>
+											Nginx
+										</li>
+									</ul>
+									<p class="grey-text">
+										These are just things I dabbled with during my lesure time in order to know commonly used components in large systems.
+									</p>
+								</li>
+							</ul>
 						</div>
 					</div>
 					<div id="work">
@@ -116,11 +210,10 @@
 							</p>
 							<p class="content">
 								<a href="http://www.sinacloud.com/" target="_blank">Sina App Engine</a> is one of the biggest Platform-as-a-Service providers in China.
-								I worked in this company as a storage enginner maintaining and developing a distributed file system named glusterfs.
+								I worked in this company as a storage engineer maintaining and developing a distributed file system named glusterfs.
 								The filesystem was employeed to save millions of pictures and text files for the platform.
 								The throughput(both of disk io and network io) and load were quite high every day so it was firmly challenging
-								to make sure that it functioned properly. During this period, I gained considerable experience of Linux,
-								Filesystem and Network.
+								to make sure that it functioned properly.
 							</p>
 							<p class="grey-text">
 								Technologies: C, Socket, Linux, Filesystem, Multiple-threads, Async/Event-driven
@@ -132,38 +225,37 @@
 							</p>
 							<p class="content">
 								<a href="http://www.hiwifi.com/" target="_blank">HIWIFI</a> is a manufacturer of family routers.
-								I took part in multiple projects while I was working there:
+								I took part in multiple projects(components) while I was working there:
 								<ul class="projects">
 									<li>
 										<span class="project">Magent</span>
 										<p>
-											This was a client-side application written in pure C. Its main responsibility was maintaining a TLS/secure
-											connection with the servers so that commands could be delivered to the router.
-											As the network device varies greatly, it was not an easy task to establish a stable and secure connection
-											from a router to the server. I had to diagnose and work around all kinds of network issues such as http/dns hijack,
-											black-hole, nat keepalive.
+											This was a client-side application written in C/Lua. Its main responsibility was maintaining a secure
+											connection with the server so that commands could be delivered to the router from the servers.
+										</p>
+										<p class="grey-text">
+											Technologies: C, Linux, Multiple processes, Event driven, Libev
 										</p>
 									</li>
 									<li>
 										Carrier
 										<p>
-											Based on c and libev, this server-side project was responsible for connections from routers.
-											My role in this project was to code the network module. The challeging part is to hold hundreds of thousands of
-											connections per server.
+											Based on C and libuv, it was responsible for holding hundreds of thousands of connections from clients.
+										</p>
+										<p class="grey-text">
+											Technologies: C, Linux, Multiple threads, Event driven, Libuv, Redis, Rabbitmq, Jenkins
 										</p>
 									</li>
 									<li>
 										Cloud
 										<p>
-											The project provided http service of accepting messages which were to deliver to routers.
-											It was my job to write http module which took messages and pushed them to rabbitmq.
+											The component accepted messages via RESTful APIs and delivered them to routers.
+										</p>
+										<p class="grey-text">
+											Technologies: Java, SpringMVC, Libuv, Redis, Rabbitmq, MySQL, HTML/CSS/Javascrit, JQuery, Jenkins
 										</p>
 									</li>
 								</ul>
-							</p>
-							<p class="grey-text">
-								Technologies: C, Socket, Linux, Multiple-threads, Async/Event-driven, Java, Spring, Redis, Rabbitmq,
-								Javascript, HTML, CSS, JQuery, MySQL
 							</p>
 						</div>
 						<div class="details">
@@ -177,184 +269,67 @@
 									<li>
 										<span class="project">DNS Manager</span>
 										<p>
-											As the company possessed its own private Infrastructure-as-a-Service platform based on Openstack and
-											Platform-as-a-Service based on Mesos/Docker, DNS needed to be updated dramatically and constantly.
-											It was my duty to maintain and develop this system so operations could manipulate DNS records via a
-											browser and third-party systems were able to do so by calling http interfaces.
-											This project was quite stressfull since even a tiny lapse could lead to a disaster,
-											and I had to take great care to make sure everything went smooth.
+											Enable third parties to update DNS records via RESTful APIs. I was in charge of it.
+										</p>
+										<p class="grey-text">
+											Technologies: Python, MySQL, Rabbitmq, Named, Jenkins
 										</p>
 									</li>
 									<li>
 										<span class="project">Alarm System</span>
 										<p>
-											The company has so many servers and systems that innumerable alarm messages had to be sent to developers and
-											operations every day because of failures of systems and servers. It cost a fortue to send these messages by MSM,
-											so we decided to start a projects to deliver messages by an android/ios app. For the whole system was similar to
-											the previous one I worked on, I was in charge of the system.
+											It was used to send alarm messages to developers via App instead of MSM. As hundres messages were sent in this way,
+										  money was saved. I was in charge of it.
+										</p>
+										<p class="grey-text">
+											Technologies: Java, Android, MySQL, Rabbitmq, Mybatis, Jenkins
 										</p>
 									</li>
 									<li>
 										<span class="project">QPaaS</span>
 										<p>
-											This is the private Platform-as-a-Service platform. It was built on Mesos and Docker. Before this platform,
-											engineers had to spent hours and hours to clone an isolated system to do specific developement.
-											Now by using this platform, they just needed to wait for a few minutes after clicking a 'clone' button.
-											I was coping with the network part of the platform(DNS, NAT, Service Discover).
+											This is the private Platform-as-a-Service platform. It was built on Mesos(Marathon) and Docker so that
+											engineers were able to clone an isolated system to do specific developement within a short time. I was responsible
+											for http service discovery using nginx(openrestry).
+										</p>
+										<p class="grey-text">
+											Technologies: Nginx, Lua, Marathon, Docker, Jenkins.
 										</p>
 									</li>
 								</ul>
 							</p>
-							<p class="grey-text">
-								Technologies: C, Socket, Linux, Multiple-threads, Java, Spring, Mybatis, Python, Rabbitmq, Android, DNS, MySQL,
-								PostgreSQL, Javascript, HTML, CSS, JQuery
-							</p>
 						</div>
 						<div class="details">
 							<p class="title">
-								<span class="org-name">Web Developer, Lumi IT Solutions</span><span class="org-period"> Sep 2016 - Now</span>
+								<span class="org-name">Web Developer, Lumi IT Solutions</span><span class="org-period"> Sep 2016 - Mar 2017 </span>
 							</p>
 							<p class="content">
-								Currently I am working for <a href="http://www.lumiit.com.au/" target="_blank">Lumi IT</a>, a small company which develops various applications
+								<a href="http://www.lumiit.com.au/" target="_blank">Lumi IT</a> is a small company which develops various applications
 								for businesses.
 								<ul class="projects">
 									<li>
 										<span class="project">Austcorp</span>
 										<p>
-											<a href="http://www.austcorp.com.au/" target="_blank">Just a web site.</a>
+											<a href="http://www.austcorp.com.au/" target="_blank">Just a responsive web site built on WordPress.</a>
 										</p>
 									</li>
 									<li>
 										<span class="project">Salary Saver</span>
 										<p>
-											This is a web application, but the owner has decided that only the internal staff can access it.
+											This is a responsive web application, but the owner has decided that only the internal staff can access it.
 										</p>
 									</li>
 								</ul>
 							</p>
 							<p class="grey-text">
-								Technologies: Linux, Java, Spring, Mybatis, Python, Javascript, HTML, CSS, JQuery, Gulp, Sass, MySQL
+								Technologies: Linux, Java, Spring, Mybatis, Python, Javascript, HTML, CSS, JQuery, Bootstrap, Gulp, Sass, MySQL, Jenkins, Jira
 							</p>
 						</div>
 					</div>
-
-					<div id="self-sale">
-						<div class="tag">
-							<div class="tag-content">
-									Why me
-							</div>
-							<div class="tag-carret">
-							</div>
-						</div>
-						<div class="details">
-							<p>
-								<strong>I can create value for your company, and I am diligent in work and studying.</strong>
-							</p>
-						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script>
-	var ctx = document.getElementById("myChart");
-	Chart.defaults.global.maintainAspectRatio = false;
-	var tooltipMap = {
-		"C": {
-			body: ["Pretty good at programming with C under linux platform."]
-		},
-		"Linux/OS": {
-		 	body: ["OS: Good understading of it, I implemented simplified processes, FS, MM during my university time.", "Linux: Have been working on this platform ever since I graduated."],
-			footer: "Understanding the low-level stuff enables me to finish programming jobs using new languages."
-		},
-		"Java/SHM": {
-		 	body: ["Spring/Mybatis: Can utilize them to complete tasks reliably.", "Tomcat/Servlet/JSP: Understand basic concepts.", "Hibernate: Doable."]
-		},
-		"Javascript/CSS/HTML": {
-		 	body: ["CSS/HTML/Bootstrap: Have no problem to make web pages responsive and to follow design.",
-			"Javascript/JQuery/Angular: Able to deal with user interaction and data transfer using Ajax/JSON.",
-			"Sass/Gulp: Know why they are needed and how to use them to compile, minify files."]
-		},
-		"Python/SHELL": {
-		 	body: ["Python: Have sufficient skills to code tools or to build web applications with Flask.",
-							"SHELL: Familiar with it, I don't have any trouble to employee this."]
-		},
-		"SQL/MySQL": {
-		 	body: ["MySQL: Able to design tables, which satisfy normalization, based on business requirement."]
-		},
-		"Learning ability": {
-		 	body: ["I can use a new programming language or framework after a short period of learning."],
-		},
-		"Network": {
-		 	body: ["TCP/IP: Pretty familiar with it, understand how data is transfered through different networking devices.",
-				"DNS: Understand the process of translating a domain name into an IP address.",
-				"HTTP: Familiar with important concepts like headers, cookie, transfer encoding etc.",
-				"TLS: Understand how a TLS connection is established, why it is needed. Capable of developing secure apps."],
-			footer: "Understand what exactly happens when a user inputs a URL and hits ENTER."
-		},
-		"Data Structure": {
-			body: "Data Structure: Familiar with common data structures and their pros and cons."
-		}
-	}
-	var data = {
-		labels: ["Learning ability", "Linux/OS", "Network", "Java/SHM", "Javascript/CSS/HTML", "Python/SHELL", "C", "SQL/MySQL", "Data Structure"],
-		datasets: [
-			{
-				label: "Hover to see details",
-				backgroundColor: "rgba(179,181,198,0.2)",
-				borderColor: "rgb(131, 126, 182)",
-				pointBackgroundColor: "rgb(131, 126, 182)",
-				pointBorderColor: "#fff",
-				pointHoverBackgroundColor: "#fff",
-				pointHoverBorderColor: "rgba(179,181,198,1)",
-				data: [80, 65, 70, 60, 60, 50, 72, 55, 55]
-			}
-		]
-	};
-	var options = {
-		tooltips: {
-			callbacks: {
-				label: function(tooltipItem, data) {
-					return tooltipMap[data.labels[tooltipItem.index]].body;
-				},
-				footer: function(tooltipItem, data) {
-					if ('footer' in tooltipMap[data.labels[tooltipItem[0].index]]) {
-						return tooltipMap[data.labels[tooltipItem[0].index]]['footer'];
-					}
-					return "";
-				}
-			}
-		},
-		scale: {
-			reverse: false,
-			ticks: {
-				beginAtZero: true,
-				stepSize: 25,
-				userCallback: function (value, index, values) {
-					if (value == 25) {
-						return "Basic"
-					}
-					if (value == 50) {
-						return "Intermediate";
-					}
-					if (value == 75) {
-						return "Advanced";
-					}
-					return "Professional";
-				}
-			}
-		},
-		layout: {
-			padding: {
-				bottom: 10
-			}
-		}
-	}
-	var myRadarChart = new Chart(ctx, {
-		type: 'radar',
-		data: data,
-		options: options
-	});
-	</script>
 </body>
 </html>

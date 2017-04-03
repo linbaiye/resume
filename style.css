@@ -1,0 +1,249 @@
+#work-and-edu {
+  padding-left: 10px;
+  overflow: hidden; }
+
+#work-and-edu > div {
+  height: 100%;
+  background-color: white !important;
+  padding-left: 0; }
+
+#personal, #edu {
+  padding-top: 20px; }
+
+.skill-category li, .projects li {
+  margin-bottom: 10px; }
+
+.projects p {
+  margin-bottom: 0; }
+
+#skill-categories {
+  list-style-type: square;
+  padding-left: 15px; }
+  #skill-categories .skill-category ul {
+    padding-left: 15px; }
+  #skill-categories .skill-category {
+    margin-bottom: 10px; }
+  #skill-categories .skill-category > p:first-child {
+    font-weight: 600;
+    color: #837eb6 !important; }
+  #skill-categories p {
+    margin-bottom: 0; }
+  #skill-categories .skill-note {
+    color: black; }
+  #skill-categories .skill-title {
+    color: #837eb6 !important; }
+
+.tag-content {
+  line-height: 30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: white; }
+
+.tag-carret {
+  width: 0;
+  height: 0; }
+
+@media (min-width: 768px) {
+  .tag-content, .tag-carret {
+    margin-left: -6px; }
+
+  .tag-carret {
+    border-left: 6px solid transparent; }
+
+  #personal div {
+    position: fixed;
+    top: 30%;
+    padding: 20px; }
+
+  #personal p {
+    width: 90%; }
+
+  #work-and-edu {
+    padding-right: 0; }
+
+  #work-and-edu > div {
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.4); }
+
+  .tag {
+    width: 60%; }
+
+  #person-name {
+    border-bottom: 1px dotted #3ab981 !important; }
+
+  #person-name i {
+    color: #3ab981 !important; }
+
+  #person-phone {
+    border-bottom: 1px dotted #837eb6 !important; }
+
+  #person-phone i {
+    color: #837eb6 !important; }
+
+  #person-email i {
+    color: #da5757 !important; }
+
+  #person-email {
+    border-bottom: 1px dotted #da5757 !important; }
+
+  #person-skype i {
+    color: #8cd362 !important; }
+
+  #person-skype {
+    border-bottom: 1px dotted #8cd362 !important; }
+
+  #person-visa-expiry {
+    border-bottom: 1px dotted #f7c953 !important; }
+
+  #person-visa-expiry i {
+    color: #f7c953 !important; }
+
+  #person-address {
+    border-bottom: 1px dotted #d51e22 !important; }
+
+  #person-address i {
+    color: #d51e22 !important; }
+
+  #person-visa-type {
+    border-bottom: 1px dotted #4e89da !important; }
+
+  #person-visa-type i {
+    color: #4e89da !important; }
+
+  #pdf-resume {
+    border-bottom: 1px dotted #bb824e; }
+
+  #pdf-resume i {
+    color: #bb824e !important; }
+
+  #web-link {
+    display: none; } }
+@media (max-width: 767px) {
+  #work {
+    margin-top: 70px; }
+
+  #personal div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4) !important;
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  #personal {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+  #work-and-edu {
+    padding-top: 0;
+    margin-top: 0;
+    padding-right: 10px; }
+
+  #work-and-edu > div {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4) !important;
+    padding-right: 0; }
+
+  .tag {
+    width: 100%; }
+
+  .tag-content {
+    color: white !important; }
+
+  .tag-carret {
+    display: none; }
+
+  #pdf-resume {
+    display: none; }
+
+  .details {
+    padding-right: 15px; } }
+.container-fluid > .row {
+  background-color: #fafafa; }
+
+#personal .name {
+  color: #69707a !important; }
+
+#personal, #work-and-edu {
+  overflow: auto; }
+
+.container-fluid {
+  max-width: 1160px; }
+
+#portfolios .projects {
+  padding-left: 15px; }
+
+#edu .tag-carret {
+  border-top: 4px solid #8cd362 !important; }
+
+#edu .tag-content {
+  background-color: #82c958 !important; }
+
+#work .tag-content {
+  background-color: #f7c953 !important; }
+
+#work .tag-carret {
+  border-top: 4px solid #edbf49 !important; }
+
+#self-sale .tag-carret {
+  border-top: 4px solid #d51e22 !important; }
+
+#self-sale .tag-content {
+  background-color: #cb1418 !important; }
+
+#skill .tag-content {
+  background-color: #837eb6 !important; }
+
+#skill .tag-carret {
+  border-top: 4px solid #7974ac !important; }
+
+#portfolios .tag-content {
+  background-color: #4e89da !important; }
+
+#portfolios .tag-carret {
+  border-top: 4px solid #447fd0 !important; }
+
+#portfolios .projects a {
+  color: #4e89da !important;
+  font-size: 14px;
+  font-weight: 600; }
+
+#portfolios {
+  color: #4e89da !important; }
+
+#portfolios p {
+  color: black; }
+
+.details {
+  padding-left: 15px;
+  margin-bottom: 10px; }
+
+#work .details {
+  border-bottom: 1px dashed #f7c953; }
+
+#work .project-name {
+  color: #f7c953; }
+
+#personal .name, #personal .value {
+  display: inline-block;
+  vertical-align: top; }
+
+#personal .name {
+  width: 40%; }
+
+#personal .value {
+  width: 60%; }
+
+.org-name {
+  font-size: 18px;
+  font-weight: 600; }
+
+.grey-text {
+  color: #89959B !important; }
+
+.details .projects {
+  list-style-type: square; }
+
+.org-period {
+  font-size: 12px;
+  color: #89959B !important; }
+
+/*# sourceMappingURL=style.css.map */
